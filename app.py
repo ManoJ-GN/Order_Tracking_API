@@ -22,7 +22,7 @@ def create_connection():
         print(f"Error: {e}")
         return None
 
-@app.route('/webhook', methods=['POST'])
+@app.route('/', methods=['POST'])
 def webhook():
     data = request.json
     if data:
